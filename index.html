@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Delivery System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Information Delivery System</h1>
+        </header>
+        
+        <main>
+            <section class="card input-section">
+                <h2>Create Information</h2>
+                <form id="info-form">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" placeholder="Enter information title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea id="content" name="content" placeholder="Enter your content here" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Information</button>
+                </form>
+            </section>
+            
+            <section class="card display-section">
+                <h2>Submitted Information</h2>
+                <div class="info-container">
+                    <p class="empty-state">No information submitted yet. Fill out the form above to see results here.</p>
+                    <!-- Dynamic content will be inserted here by JavaScript later -->
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 Information Delivery System</p>
+        </footer>
+    </div>
+</body>
+</html>
