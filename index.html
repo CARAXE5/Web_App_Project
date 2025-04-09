@@ -3,46 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information Delivery System</title>
+    <title>Government Services Portal</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Information Delivery System</h1>
-        </header>
-        
-        <main>
-            <section class="card input-section">
-                <h2>Create Information</h2>
-                <form id="info-form">
-                    <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" id="title" name="title" placeholder="Enter information title" required>
+    <div class="app-container">
+        <div class="card">
+            <!-- Left Section -->
+            <div class="left-section">
+                <!-- Top Navigation -->
+                <nav class="top-nav">
+                    <div class="logo">GovConnect</div>
+                    <ul class="nav-links">
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Main Content -->
+                <div class="content">
+                    <h1>Government Services Guide</h1>
+                    <div class="divider"></div>
+                    <p class="subtitle">Your one-stop hub to access essential government services efficiently.</p>
+                    
+                    <a href="#" class="brown-button">Learn More</a>
+
+                    <div class="services-header">
+                        <h2>Featured Government Services</h2>
                     </div>
-                    <div class="form-group">
-                        <label for="content">Content</label>
-                        <textarea id="content" name="content" placeholder="Enter your content here" rows="5" required></textarea>
+
+                    <!-- Service Cards Grid -->
+                    <div class="services-grid">
+                        <!-- Row 1 -->
+                        <div class="service-card">
+                            <div class="avatar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div class="service-info">
+                                <h3>Business Registration</h3>
+                                <p>Register your business and obtain licenses online</p>
+                                <span class="badge">Popular</span>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="avatar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-info">
+                                <h3>Tax Registration</h3>
+                                <p>Register for tax services and file returns easily</p>
+                                <span class="badge">Popular</span>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="service-card">
+                            <div class="avatar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 14c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"></path>
+                                    <path d="M12 14v7"></path><path d="M7 21h10"></path>
+                                </svg>
+                            </div>
+                            <div class="service-info">
+                                <h3>Weather Services</h3>
+                                <p>Access local weather forecasts and alerts</p>
+                                <span class="badge">Essential</span>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="avatar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                                </svg>
+                            </div>
+                            <div class="service-info">
+                                <h3>Food Safety</h3>
+                                <p>Food and beverage quality control guidelines</p>
+                                <span class="badge">Important</span>
+                            </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="service-card">
+                            <div class="avatar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <div class="service-info">
+                                <h3>Entrepreneur Hub</h3>
+                                <p>Resources and guidance for new businesses</p>
+                                <span class="badge">Trending</span>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="avatar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <div class="service-info">
+                                <h3>Visa Services</h3>
+                                <p>Online applications for visas and permits</p>
+                                <span class="badge">Popular</span>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="btn-submit">Submit Information</button>
-                </form>
-            </section>
-            
-            <section class="card display-section">
-                <h2>Submitted Information</h2>
-                <div class="info-container">
-                    <p class="empty-state">No information submitted yet. Fill out the form above to see results here.</p>
-                    <!-- Dynamic content will be inserted here by JavaScript later -->
                 </div>
-            </section>
-        </main>
-        
-        <footer>
-            <p>© 2025 Information Delivery System</p>
-        </footer>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="profile-section">
+                    <div class="profile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <span>Account</span>
+                </div>
+
+                <div class="check-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+
+                <div class="login-form">
+                    <h2>Log in</h2>
+                    <p class="login-subtitle">Access your account</p>
+                    
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+
+                    <button class="login-button">Login</button>
+                    
+                    <div class="form-footer">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
